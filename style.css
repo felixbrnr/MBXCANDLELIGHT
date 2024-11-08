@@ -1,0 +1,113 @@
+body {
+    background-image: url("toureiffelnuit.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Utiliser toute la hauteur de la page */
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: flex-start; /* Aligner en haut de la page */
+	font-family: "Open Sans", sans-serif; 
+	overflow: hidden;
+}
+
+h1 {
+	margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre douce */
+	background-color: rgba(255, 255, 255, 0.1); /* Fond opaque (noir à 50% de transparence) */
+    padding: 10px; /* Ajouter de l'espace autour du texte */
+	font-size:45px
+}
+
+h2 {
+	margin: 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	
+}
+
+.no-shadow {
+	text-shadow: none;
+}
+
+table {
+    width: 90%; /* Limiter la largeur du tableau pour qu'il ne soit pas trop large */
+    border: none;
+    border-collapse: collapse;
+    margin-top: 0;
+    margin-bottom: 0; /* Éviter un espace sous le tableau */
+	table-layout: fixed;
+}
+
+td {
+    border: none;
+    padding: 20px; /* Ajuster l'espace intérieur */
+    text-align: center;
+    min-height: 150px; /* Ajuster la hauteur minimale des cellules */
+    min-width: 290px;
+}
+
+td:first-child, td:nth-child(3) {
+	width:10%
+}
+
+td:nth-child(2) {
+	width:70%
+}	
+
+td img {
+    width: 35%; /* Adapter l'image à la largeur de la cellule */
+    height: auto;
+	transition: transform 0.5s ease, opacity 0.5s ease
+}
+
+.image-anim:hover {
+	transform: scale(1.3);
+}
+
+.logo-link:hover {
+	background-color: transparent;
+}
+
+table tr:not(:first-child) td:nth-child(2) {
+	background-color: rgba(255, 255, 255, 0.08);
+	
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    background-color: #f0f0f0;
+    color: #322217;
+}
+
+p {
+    color: white;
+    text-align: left;
+    font-size: 10px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.conditions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 100%; 
+    text-align: left;
+}
+
+.conditions p {
+    font-size: 10px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
